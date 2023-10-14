@@ -20,5 +20,20 @@ query getCategories{
     id
     name
     description
+    courses{
+      id
+      name
+    }
+  }
+}
+
+query getCourses{
+  courses{
+    id
+    name
+    description
+    category{
+      name
+    }
   }
 }
