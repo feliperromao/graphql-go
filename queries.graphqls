@@ -7,6 +7,14 @@ mutation createCategory{
   }
 }
 
+mutation createCourse{
+  createCourse(input: {name: "Fullcycle", description: "treinamento full cycle", categoryId:"008cda5e-9142-4a6a-ac28-5047d7312af3"})
+  {
+    name
+    description
+  }
+}
+
 query getCategories{
   categories{
     id
